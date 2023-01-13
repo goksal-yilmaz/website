@@ -1,0 +1,91 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 50px 0px;
+
+    .banner-content{
+        max-width: 1200px;
+        padding: 0px 20px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .banner-aside{
+            width: 60%;
+            h1{
+                font-size: 72px;
+                font-weight: 600;
+
+                span{
+                    color:#5b5bc5;
+                }
+            }
+
+            h2{
+                font-size: 40px;
+                font-weight: 800;
+                background: -webkit-linear-gradient(#A2A2FF, #6d6de7);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            p{
+                width: 90%;
+                font-size: 18px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        .figure-filter{
+            filter: invert(41%) sepia(75%) saturate(521%) hue-rotate(201deg) brightness(81%) contrast(94%);
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .banner{
+
+        .banner-content{
+            max-width: 1024px;
+            padding: 0px;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            .banner-aside{
+                width: 100%;
+                margin-bottom: 30px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+
+                h1{
+                    font-size: 50px;
+                }
+
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .banner-content{
+        max-width: 767px;
+        padding: 0px;
+        
+        .banner-figure, .figure-filter{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+    
+            .banner-image{
+                width: 70%;
+            }
+        }
+    }
+}

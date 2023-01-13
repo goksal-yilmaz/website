@@ -1,0 +1,113 @@
+.aside{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 50px 0px;
+    .aside-container{
+        width: 1200px;
+        padding: 40px 30px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .aside-header{
+            width: 40%;
+            h3{
+                font-size: 30px;
+                font-weight: 800;
+                background: -webkit-linear-gradient(#A2A2FF, #6d6de7);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .aside-details{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            .aside-box{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+                margin-bottom: 30px;
+
+                h4{
+                    font-size: 18px;
+                    font-weight: 800;
+                    width: 50%;
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: -10px;
+                        left: 0;
+                        right: 0;
+                        width: 50px;
+                        height: 2px;
+                        background:linear-gradient(#A2A2FF, #6d6de7);
+                    }
+                }
+
+                p{
+                    width: 60%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, 0.7);
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical; 
+                    overflow:hidden;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .aside{
+        .aside-container{
+            max-width: 1024px;
+            flex-direction: column;
+
+            .aside-header{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .aside-details{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .aside{
+        .aside-container{
+            max-width: 767px;
+
+            .aside-details{
+                .aside-box{
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                    
+                    h4{
+                        width: 100%;
+                    }
+
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

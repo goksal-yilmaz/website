@@ -1,0 +1,28 @@
+.hax-info{
+    width: 60%;
+
+    h3{
+        font-size: 30px;
+        font-weight: 800;
+        background: -webkit-linear-gradient(#A2A2FF, #6d6de7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.7);
+
+        b{
+            color: #A2A2FF;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .hax-info{
+        margin-bottom: 20px;
+    }
+}
